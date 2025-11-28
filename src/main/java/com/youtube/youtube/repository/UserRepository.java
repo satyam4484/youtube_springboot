@@ -11,7 +11,7 @@ import com.youtube.youtube.entity.User;
 // public interface UserRepository extends JpaRepository<EntityType,datatype of primary key> {
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    // Basic Finders
+    // Basic Finders for jpa
     User findByEmail(String email);
     Optional<User> findOptionalByEmail(String email);
     List<User> findAllByEmail(String email);
